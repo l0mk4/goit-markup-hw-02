@@ -20,8 +20,7 @@
 body {
   background-color: var(--light-text-color);
   color: var(--primary-text-color);
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: "Roboto", sans-serif;
 }
 
 .web {
@@ -59,7 +58,7 @@ body {
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-decoration: none;
@@ -79,7 +78,7 @@ body {
 .contact-mail {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -91,7 +90,7 @@ body {
 .contact-tel {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -126,27 +125,22 @@ body {
 }
 
 .btn {
-  font-family: inherit;
-  cursor: pointer;
-  background-color: var(--light-text-color);
-  font-weight: 500;
+    font-weight: 700;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.btn:hover,
-.btn:focus {
+  letter-spacing: 0.06em;
+  color: var(--light-text-color);
   background-color: var(--info-text-color);
 }
-
 /* ---------------------------------------Особенности--------------------------------------- */
 
 .features .list-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.15px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
@@ -154,7 +148,7 @@ body {
 .features .list-text {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 2px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -162,11 +156,26 @@ body {
 .section {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.2px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+.section-title  {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2px;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+
 /* ---------------------------------------наша команда--------------------------------------- */
+
+
+.section-team {
+  background-color: #F5F4FA;
+}
 
 .name {
   font-weight: 500;
@@ -180,7 +189,7 @@ body {
 .profa {
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
@@ -201,6 +210,7 @@ body {
 
 .filter:hover,
 .filter:focus {
+  color: var(--light-text-color);
   background-color: #2196f3;
 }
 
@@ -219,11 +229,14 @@ body {
   top: 262px;
 }
 
+.gallery-link {
+  text-decoration: none;
+}
 
 .gallery-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2px;
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
 }
@@ -231,7 +244,7 @@ body {
 .gallery-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 2px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -239,10 +252,6 @@ body {
 /* ---------------------------------------подвал--------------------------------------- */
 
 .footer {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2094px;
   background: var(--hero-color);
 }
 
@@ -251,13 +260,8 @@ body {
 }
 
 .address-contact {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--light-text-color);
+    font-style: normal;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
